@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with Bootstrap</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Home Section -->
+            <div class="col-lg-12" id="home">
+                <h1>Welcome to My Website</h1>
+                <p>This is the home section of the website.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- About Section -->
+            <div class="col-lg-6" id="about">
+                <h2>About</h2>
+                <p>This is the about section of the website.</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+
+            <!-- Services Section -->
+            <div class="col-lg-6" id="services">
+                <h2>Services</h2>
+                <p>This is the services section of the website.</p>
+                <div class="card">
+                    <img src="service.jpg" class="card-img-top" alt="Our Services">
+                    <div class="card-body">
+                        <p class="card-text">Description of services offered.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Contact Section -->
+            <div class="col-lg-12" id="contact">
+                <h2>Contact</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+/* Custom Styles */
+
+/* Navbar Customization */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Section Heading Styles */
+h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Card Customization */
+.card {
+    margin-top: 20px;
+}
+
+/* Form Customization */
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Customization */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1, h2 {
+        text-align: center;
+    }
+
+    .card {
+        margin: 20px 0;
+    }
+}
+
